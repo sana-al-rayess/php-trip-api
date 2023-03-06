@@ -26,3 +26,5 @@ if (isset($_GET['numbers'])) {
     echo json_encode($sorted_numbers);
 }
 ?>
+
+<!-- http://localhost/php-trip-api/selectionsort.php?numbers=1,5,2,99 -->
