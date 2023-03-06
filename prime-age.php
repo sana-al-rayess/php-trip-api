@@ -1,7 +1,7 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $year = $_POST['year'];
-  $age = date('Y') - $year;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') { //checks if the HTTP request method is POST
+  $year = $_POST['year']; //extracts the 'year' value from the HTTP POST request parameter
+  $age = date('Y') - $year; //calculates the age of the user by subtracting the birth year provided in the 'year' parameter from the current year
   if (isPrime($age)) {
     echo "Your age is $age and it is prime";
   } else {

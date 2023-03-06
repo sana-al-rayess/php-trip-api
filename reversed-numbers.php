@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
   $string = $_GET['string'];
-  $result = '';
-  $number = '';
+  $result = '';// initialize an empty string variable to store the final output
+  $number = '';//initialize an empty string variable  to accumulate digits of a number in the input string
   for ($i = 0; $i < strlen($string); $i++) {
     $char = $string[$i];
     if (is_numeric($char)) {

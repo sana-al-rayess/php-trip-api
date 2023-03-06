@@ -1,6 +1,6 @@
 <?php
-if (isset($_GET['str'])) {
-  $str = $_GET['str'];
+if (isset($_GET['str'])) {  // checks if string parameter 'str' is set using the isset()
+  $str = $_GET['str']; // gets the value of 'str' parameter from the $_GET array and assigns it to $str
   if (isPalindrome($str)) {
     echo "$str is a palindrome";
   } else {
